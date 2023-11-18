@@ -2,6 +2,41 @@
 const fs=require('fs');
 const inquirer= require('inquirer');
 
+const readme=(name, description, installation, usage, credits, test, license, github, email)=> `# <${name}>
+
+## Description
+${description}
+
+## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## Credits
+${credits}
+
+## License
+${license}
+
+
+## Tests
+${test}
+
+## Contact Me
+${github},
+${email}
+`
+
+
+
 // TODO: Create an array of questions for user input
 const questions = [
     inquirer
@@ -64,6 +99,10 @@ const questions = [
     ])
 
 ];
+.then((data) =>{
+    console.log(data)
+
+})
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
