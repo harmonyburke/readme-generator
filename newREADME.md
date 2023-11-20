@@ -1,7 +1,7 @@
 # <undefined>
 
 ## Description
-dff
+dafd
 
 ## Table of Contents 
 
@@ -11,21 +11,21 @@ dff
 - [License](#license)
 
 ## Installation
-dasgrewt
+dafdaf
 
 ## Usage
-ewqgfdshg
+fdsafda
 
 ## Credits
-grewt
+fdafdaf
 
 ## License
-Apache License 2.0
+BSD 2-Clause Simplified License
 
 
 ## Tests
-gfdgfd
+fdfda
 
 ## Contact Me
-gdsgfds,
-gfdsgfds
+fdafda,
+dfd
