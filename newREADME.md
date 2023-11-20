@@ -1,7 +1,7 @@
 # <undefined>
 
 ## Description
-dafd
+here
 
 ## Table of Contents 
 
@@ -11,21 +11,23 @@ dafd
 - [License](#license)
 
 ## Installation
-dafdaf
+install
 
 ## Usage
-fdsafda
+use it
 
 ## Credits
-fdafdaf
+no
 
 ## License
-BSD 2-Clause Simplified License
+MIT license
 
 
 ## Tests
-fdfda
+test
 
-## Contact Me
-fdafda,
-dfd
+## Questions
+If you have any further questions, you can reach me by email or Github!
+https://github.com/harmonyburke/undefined
+harmonyburke,
+email

@@ -33,7 +33,9 @@ ${license}
 ## Tests
 ${test}
 
-## Contact Me
+## Questions
+If you have any further questions, you can reach me by email or Github!
+https://github.com/${github}/${name}
 ${github},
 ${email}
 `
