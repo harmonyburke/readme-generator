@@ -10,8 +10,22 @@ function renderLicenseBadge(license) {
         console.log(license)
       console.log('No license chosen.')
       return ""
-    }
-    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
+    } else {
+        switch(license.toString()) {
+          case 'MIT':
+            return `![GitHub](https://img.shields.io/badge/License-MIT-informational)`;
+          case 'The Unlicense':
+            return `![GitHub](https://img.shields.io/badge/License-The%20Unlicense-red)`;
+          case 'GNU GPLv3':
+            return `![GitHub](https://img.shields.io/badge/License-GNU%20GPLv3-yellow)`;
+          case 'Apache License 2.0':
+            return `![GitHub](https://img.shields.io/badge/License-Apache%20License%202.0-blueviolet)`;
+          case 'Mozilla Public License 2.0':
+            return `![GitHub](https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-brightgreen)`;
+        };
+
+      };
+    
     // will return an empty string if nothing is entered, if something is entered it will show the license badge 
   }
   // renderLicenseBadge(license)
@@ -31,7 +45,11 @@ function renderLicenseBadge(license) {
     if('No License'){
       return ""
     }
-    return '${license}'
+    return `
+## License
+This application is licensed under the terms of the ![${license}](${renderLicenseBadge(license)}) license.
+[License Terms](${renderLicenseLink(license)})
+`
   }
 // this is a skeleton for the readme file to fill in 
 const readme=(name, description, installation, usage, credits, test, license, github, email)=> 
@@ -57,10 +75,9 @@ ${usage}
 ${credits}
 
 ## License
+${license}
 ${renderLicenseSection(license)}
-${renderLicenseBadge(license)}
 
-${renderLicenseLink(license)}
 
 
 ## Tests
